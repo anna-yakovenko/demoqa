@@ -3,9 +3,9 @@ from pages.demoqa import Demoqa
 def test_check_icon(browser):
     demoqa = Demoqa(browser)
     demoqa.visit()
-    demoqa.click_on_the_icon()
+    demoqa.icon.click()
     assert demoqa.equal_url()
-    assert demoqa.exist_icon()
+    assert demoqa.icon.exist()
 
 
 
